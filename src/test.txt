@@ -1,0 +1,16 @@
+    useEffect(() => {
+        let p = MotionPathPlugin.convertCoordinates(dummySpaceBloc.current, rocketCat.current, {x:0, y:0});
+        gsap.to("#spaceCat", {
+            x: p.x,
+            y: p.y,
+            ease: "sine.in",
+            duration: "4",
+            scrollTrigger: {
+                trigger: "#about",
+                start: "top center",
+                end: "+=500",
+                markers: true,
+              }
+              
+        });
+    }, []);

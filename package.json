@@ -2,20 +2,34 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://Drymy.github.io",
   "dependencies": {
+    "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "aos": "^2.3.4",
+    "gh-pages": "^4.0.0",
+    "gsap": "^3.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-gsap": "^3.2.1",
     "react-scripts": "4.0.3",
+    "react-scroll-parallax": "^2.4.0",
+    "react-typewriter-effect": "^1.1.0",
+    "sass": "^1.42.1",
+    "save-dev": "^0.0.1-security",
+    "scrollmagic": "^2.0.8",
+    "styled-components": "^5.3.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
